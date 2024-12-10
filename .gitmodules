@@ -1,0 +1,3 @@
+[submodule "eewcn-res"]
+	path = eewcn-res
+	url = git@github.com:OpenEEWCN/eewcn-res

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ContextMenusWindow</class>
+ <widget class="QMainWindow" name="ContextMenusWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Window_Menu">
+    <property name="title">
+     <string>&amp;Window Menu</string>
+    </property>
+    <addaction name="actionShow_Earthquakes_History"/>
+    <addaction name="actionShow_Status_Bar"/>
+    <addaction name="actionShow_L_egends"/>
+    <addaction name="actionTo_Last_Epi_center"/>
+    <addaction name="actionTo_Home"/>
+    <addaction name="actionSet_H_ome"/>
+    <addaction name="action_Test_EEW"/>
+    <addaction name="action_Settings"/>
+    <addaction name="action_About"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tray_Menu">
+    <property name="title">
+     <string>&amp;Tray Menu</string>
+    </property>
+    <addaction name="actionShow_Main_Window"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menuList_Menu">
+    <property name="title">
+     <string>List Menu</string>
+    </property>
+    <addaction name="actionView_Intensity_on_Map"/>
+   </widget>
+   <addaction name="menu_Window_Menu"/>
+   <addaction name="menu_Tray_Menu"/>
+   <addaction name="menuList_Menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionShow_Earthquakes_History">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Earthquakes &amp;List</string>
+   </property>
+  </action>
+  <action name="action_Settings">
+   <property name="text">
+    <string>&amp;Settings…</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="actionShow_Main_Window">
+   <property name="text">
+    <string>Show &amp;Main Window</string>
+   </property>
+  </action>
+  <action name="actionTo_Last_Epi_center">
+   <property name="text">
+    <string>To Last EEW Epi&amp;center</string>
+   </property>
+  </action>
+  <action name="actionTo_Home">
+   <property name="text">
+    <string>To &amp;Home</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About…</string>
+   </property>
+  </action>
+  <action name="action_Test_EEW">
+   <property name="text">
+    <string>&amp;Test EEW…</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionSet_H_ome">
+   <property name="text">
+    <string>Set H&amp;ome…</string>
+   </property>
+  </action>
+  <action name="actionShow_L_egends">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show L&amp;egends</string>
+   </property>
+  </action>
+  <action name="actionShow_Status_Bar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Status &amp;Bar</string>
+   </property>
+  </action>
+  <action name="actionView_Intensity_on_Map">
+   <property name="text">
+    <string>View &amp;Intensity on Map</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
