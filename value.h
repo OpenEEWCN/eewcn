@@ -97,14 +97,6 @@ public:
     static qint64 getCompileTimeMS();
     static QString getAppDataPath(QString filename,bool makepath=true);
     static double PWAVE_SPEED,SWAVE_SPEED,EARTH_AVG_RADIUS;
-    /**
-     * @brief 返回编译到程序内的ID（部分偏移，可能为空字符串）
-     */
-    static QString getCompiledMachineID();
-    /**
-     * @brief 返回本机ID（完全偏移，可能为空数组）
-     */
-    static QStringList getAllLocalMachineIDs();
     static QStringList langRegionTag;
 };
 
