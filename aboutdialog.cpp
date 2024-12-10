@@ -2,7 +2,6 @@
 #include "ui_aboutdialog.h"
 #include "value.h"
 #include "eewsettings.h"
-#include "supportinfodialog.h"
 #include <QIcon>
 #include <QSysInfo>
 #include <QDateTime>
