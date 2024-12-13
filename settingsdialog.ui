@@ -1,0 +1,1100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>144</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-1113</y>
+        <width>769</width>
+        <height>1229</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="30" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QPushButton" name="buttonPathMidShakeSound">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Path</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_33">
+             <property name="text">
+              <string>R&amp;epeats</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinRepeatsMidShakeSound</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinRepeatsMidShakeSound"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonTestMidShakeSound">
+             <property name="text">
+              <string>T&amp;est</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="27" column="0">
+          <widget class="QLabel" name="label_36">
+           <property name="text">
+            <string>&amp;Shaking Intensity</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinMidShakeIntensity</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>Post &amp;URL (Leave blank to disable)</string>
+           </property>
+           <property name="buddy">
+            <cstring>editPostURL</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="27" column="1">
+          <widget class="QSpinBox" name="spinMidShakeIntensity">
+           <property name="maximum">
+            <number>12</number>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>&amp;P Wave Speed(km/s)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinPWaveSpeed</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QComboBox" name="comboUsingEEWData">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <item>
+              <property name="text">
+               <string>Wolfx</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Sichuan E.A.</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkDebugEEWData">
+             <property name="toolTip">
+              <string>Request URL’s host will be replaced with “localhost” and protocol will be set to “http”</string>
+             </property>
+             <property name="text">
+              <string>&amp;Local Debug</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="8" column="1">
+          <widget class="QSpinBox" name="spinStationRecordLength">
+           <property name="maximum">
+            <number>2147483647</number>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="spinEEWInterval">
+           <property name="toolTip">
+            <string>Only available for querying by GET method.</string>
+           </property>
+           <property name="maximum">
+            <number>2147483647</number>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>EEW Query C&amp;ount</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinEEWQueryCount</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QComboBox" name="comboUsingStation">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <item>
+              <property name="text">
+               <string>Wolfx (WebSocket)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Wolfx (GET)</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkDebugStation">
+             <property name="toolTip">
+              <string>The request URL will be http://localhost/station.json</string>
+             </property>
+             <property name="text">
+              <string>Lo&amp;cal Debug</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>&amp;History Query Interval(s)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinHistoryInterval</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="0">
+          <widget class="QLabel" name="label_37">
+           <property name="text">
+            <string>S&amp;trong Shaking Intensity</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinStrongShakeIntensity</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>Query &amp;Timeout(s)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinQueryTimeout</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_38">
+           <property name="text">
+            <string>Station Data Record &amp;Length(s)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinStationRecordLength</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>L&amp;atitude of your location(°)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinLatitude</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Minimum &amp;Local EEW Report Intensity</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinLocalReportLevel</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QPushButton" name="buttonPathAlertUpdate">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Path</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>Repea&amp;ts</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinRepeatAlertUpdate</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinRepeatAlertUpdate"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonTestAlertUpdate">
+             <property name="text">
+              <string>Te&amp;st</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="11" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>Minimum &amp;Epicenter EEW Report Intensity</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinEpicenterReportLevel</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="1">
+          <widget class="QDoubleSpinBox" name="spinLatitude">
+           <property name="minimum">
+            <double>-90.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>90.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="1">
+          <widget class="QSpinBox" name="spinCriticalLevel">
+           <property name="maximum">
+            <number>12</number>
+           </property>
+          </widget>
+         </item>
+         <item row="29" column="0">
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>Weak Shaking Detected Sound</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QLabel" name="label_40">
+           <property name="text">
+            <string>Earth Average &amp;Radius(km)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinEarthRadius</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="QDoubleSpinBox" name="spinSWaveSpeed"/>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>&amp;Station Query Interval(s)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinStationInterval</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QSpinBox" name="spinHistoryInterval">
+           <property name="toolTip">
+            <string>Only available for querying by GET method.</string>
+           </property>
+           <property name="maximum">
+            <number>2147483647</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QSpinBox" name="spinHistoryQueryCount">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item row="26" column="0">
+          <widget class="QLabel" name="label_35">
+           <property name="text">
+            <string>&amp;Weak Shaking Intensity</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinWeakShakeIntensity</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="17" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>L&amp;ongtitude of your location(°)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinLongitude</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="28" column="1">
+          <widget class="QSpinBox" name="spinStrongShakeIntensity">
+           <property name="maximum">
+            <number>12</number>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="buttonPathLocalArrive">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Path</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>R&amp;epeats</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinRepeatLocalArrive</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinRepeatLocalArrive"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonTestLocalArrive">
+             <property name="text">
+              <string>T&amp;est</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>History Query &amp;Count</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinHistoryQueryCount</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>Local Critical Alert Sound</string>
+           </property>
+          </widget>
+         </item>
+         <item row="17" column="1">
+          <widget class="QDoubleSpinBox" name="spinLongitude">
+           <property name="minimum">
+            <double>-180.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>180.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QSpinBox" name="spinEpicenterReportLevel">
+           <property name="maximum">
+            <number>12</number>
+           </property>
+          </widget>
+         </item>
+         <item row="25" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>Global Alert Sound</string>
+           </property>
+          </widget>
+         </item>
+         <item row="30" column="0">
+          <widget class="QLabel" name="label_31">
+           <property name="text">
+            <string>Shaking Detected Sound</string>
+           </property>
+          </widget>
+         </item>
+         <item row="23" column="0">
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>Alert Update Sound</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QSpinBox" name="spinQueryTimeout">
+           <property name="maximum">
+            <number>2147483647</number>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QPushButton" name="buttonPathCriticalAlert">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Path</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_23">
+             <property name="text">
+              <string>Repe&amp;ats</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinRepeatCriticalAlert</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinRepeatCriticalAlert"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonTestCriticalAlert">
+             <property name="text">
+              <string>T&amp;est</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="19" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>La&amp;nguage (Restart to take effect)</string>
+           </property>
+           <property name="buddy">
+            <cstring>comboLanguage</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="QDoubleSpinBox" name="spinPWaveSpeed"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>&amp;EEW Query Interval(s)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinEEWInterval</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>EEW &amp;Data Source</string>
+           </property>
+           <property name="buddy">
+            <cstring>comboUsingEEWData</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="24" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>Local Arriving Sound</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Local Alert Sound</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="buttonPathLocalAlert">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Path</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>&amp;Repeats</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinRepeatLocalAlert</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinRepeatLocalAlert"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonTestLocalAlert">
+             <property name="text">
+              <string>&amp;Test</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="14" column="0">
+          <widget class="QLabel" name="label_39">
+           <property name="text">
+            <string>&amp;S Wave Speed(km/s)</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinSWaveSpeed</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="31" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QPushButton" name="buttonPathStrongShakeSound">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Path</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_34">
+             <property name="text">
+              <string>Re&amp;peats</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinRepeatsStrongShakeSound</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinRepeatsStrongShakeSound"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonTestStrongShakeSound">
+             <property name="text">
+              <string>Te&amp;st</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="19" column="1">
+          <widget class="QComboBox" name="comboLanguage">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>English</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Chinese (Mainland)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Chinese (Taiwan)</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Japanese</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="QDoubleSpinBox" name="spinEarthRadius">
+           <property name="maximum">
+            <double>9999.989999999999782</double>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Minimum &amp;Global Intensity Report Level</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinGlobalReportLevel</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="1">
+          <widget class="QLineEdit" name="editPostURL"/>
+         </item>
+         <item row="7" column="1">
+          <widget class="QSpinBox" name="spinStationInterval">
+           <property name="toolTip">
+            <string>Only available for querying by GET method.</string>
+           </property>
+           <property name="maximum">
+            <number>2147483647</number>
+           </property>
+          </widget>
+         </item>
+         <item row="29" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QPushButton" name="buttonPathWeakShakeSound">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Path</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_32">
+             <property name="text">
+              <string>&amp;Repeats</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinRepeatsWeakShakeSound</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinRepeatsWeakShakeSound"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonTestWeakShakeSound">
+             <property name="text">
+              <string>&amp;Test</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="31" column="0">
+          <widget class="QLabel" name="label_29">
+           <property name="text">
+            <string>Strong Shaking Detected Sound</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QComboBox" name="comboUsingHistoryData">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <item>
+              <property name="text">
+               <string>Wolfx</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>CENC Website</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>CENC Mobile App</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Fujian E.A.</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkDebugHistoryData">
+             <property name="toolTip">
+              <string>Request URL’s host will be replaced with “localhost” and protocol will be set to “http”</string>
+             </property>
+             <property name="text">
+              <string>L&amp;ocal Debug</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSpinBox" name="spinEEWQueryCount">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item row="25" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QPushButton" name="buttonPathGlobalAlert">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Path</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>Re&amp;peats</string>
+             </property>
+             <property name="buddy">
+              <cstring>spinRepeatGlobalAlert</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="spinRepeatGlobalAlert"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonGlobalAlert">
+             <property name="text">
+              <string>Te&amp;st</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="10" column="1">
+          <widget class="QSpinBox" name="spinLocalReportLevel">
+           <property name="maximum">
+            <number>12</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="checkEnableStationData">
+           <property name="text">
+            <string>&amp;Station Data Source</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>History D&amp;ata Source</string>
+           </property>
+           <property name="buddy">
+            <cstring>comboUsingHistoryData</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="26" column="1">
+          <widget class="QSpinBox" name="spinWeakShakeIntensity">
+           <property name="maximum">
+            <number>12</number>
+           </property>
+          </widget>
+         </item>
+         <item row="22" column="0">
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>&amp;Critical Intensity</string>
+           </property>
+           <property name="buddy">
+            <cstring>spinCriticalLevel</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="QSpinBox" name="spinGlobalReportLevel">
+           <property name="maximum">
+            <number>12</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="0">
+          <widget class="QCheckBox" name="checkAutorun">
+           <property name="text">
+            <string>&amp;Autoruns app on system startup</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QCheckBox" name="checkLogToFile">
+           <property name="text">
+            <string>&amp;Write Log to File</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="checkShowLogoOnMap">
+           <property name="text">
+            <string>Show &amp;Logo on Map</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="checkShowWindowOnStartup">
+           <property name="text">
+            <string>&amp;Show Window on Startup</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QCheckBox" name="checkShowIntensityOnMap">
+           <property name="toolTip">
+            <string>Warning: Enabling this may cause performance issue</string>
+           </property>
+           <property name="text">
+            <string>Show Estimated &amp;Intensity on Map</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QCheckBox" name="checkClearLogsOnStart">
+           <property name="text">
+            <string>&amp;Clear logs every time when app starts</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QCheckBox" name="checkShowNewRecordIntensity">
+           <property name="toolTip">
+            <string>Warning: Enabling this may cause performance issue</string>
+           </property>
+           <property name="text">
+            <string>Show &amp;new record’s intensity</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QCheckBox" name="checkDontAutoSwitchTab">
+           <property name="text">
+            <string>&amp;Don’t switch earthquake list automatically</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok|QDialogButtonBox::RestoreDefaults</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>comboUsingEEWData</tabstop>
+  <tabstop>checkDebugEEWData</tabstop>
+  <tabstop>comboUsingHistoryData</tabstop>
+  <tabstop>checkDebugHistoryData</tabstop>
+  <tabstop>checkEnableStationData</tabstop>
+  <tabstop>comboUsingStation</tabstop>
+  <tabstop>checkDebugStation</tabstop>
+  <tabstop>spinEEWInterval</tabstop>
+  <tabstop>spinEEWQueryCount</tabstop>
+  <tabstop>spinHistoryInterval</tabstop>
+  <tabstop>spinHistoryQueryCount</tabstop>
+  <tabstop>spinStationInterval</tabstop>
+  <tabstop>spinStationRecordLength</tabstop>
+  <tabstop>spinQueryTimeout</tabstop>
+  <tabstop>spinLocalReportLevel</tabstop>
+  <tabstop>spinEpicenterReportLevel</tabstop>
+  <tabstop>spinGlobalReportLevel</tabstop>
+  <tabstop>spinPWaveSpeed</tabstop>
+  <tabstop>spinSWaveSpeed</tabstop>
+  <tabstop>spinEarthRadius</tabstop>
+  <tabstop>spinLatitude</tabstop>
+  <tabstop>spinLongitude</tabstop>
+  <tabstop>editPostURL</tabstop>
+  <tabstop>comboLanguage</tabstop>
+  <tabstop>buttonPathLocalAlert</tabstop>
+  <tabstop>spinRepeatLocalAlert</tabstop>
+  <tabstop>buttonTestLocalAlert</tabstop>
+  <tabstop>buttonPathCriticalAlert</tabstop>
+  <tabstop>spinRepeatCriticalAlert</tabstop>
+  <tabstop>buttonTestCriticalAlert</tabstop>
+  <tabstop>spinCriticalLevel</tabstop>
+  <tabstop>buttonPathAlertUpdate</tabstop>
+  <tabstop>spinRepeatAlertUpdate</tabstop>
+  <tabstop>buttonTestAlertUpdate</tabstop>
+  <tabstop>buttonPathLocalArrive</tabstop>
+  <tabstop>spinRepeatLocalArrive</tabstop>
+  <tabstop>buttonTestLocalArrive</tabstop>
+  <tabstop>buttonPathGlobalAlert</tabstop>
+  <tabstop>spinRepeatGlobalAlert</tabstop>
+  <tabstop>buttonGlobalAlert</tabstop>
+  <tabstop>spinWeakShakeIntensity</tabstop>
+  <tabstop>spinMidShakeIntensity</tabstop>
+  <tabstop>spinStrongShakeIntensity</tabstop>
+  <tabstop>buttonPathWeakShakeSound</tabstop>
+  <tabstop>spinRepeatsWeakShakeSound</tabstop>
+  <tabstop>buttonTestWeakShakeSound</tabstop>
+  <tabstop>buttonPathMidShakeSound</tabstop>
+  <tabstop>spinRepeatsMidShakeSound</tabstop>
+  <tabstop>buttonTestMidShakeSound</tabstop>
+  <tabstop>buttonPathStrongShakeSound</tabstop>
+  <tabstop>spinRepeatsStrongShakeSound</tabstop>
+  <tabstop>buttonTestStrongShakeSound</tabstop>
+  <tabstop>checkShowWindowOnStartup</tabstop>
+  <tabstop>checkShowLogoOnMap</tabstop>
+  <tabstop>checkLogToFile</tabstop>
+  <tabstop>checkAutorun</tabstop>
+  <tabstop>checkShowIntensityOnMap</tabstop>
+  <tabstop>checkClearLogsOnStart</tabstop>
+  <tabstop>checkShowNewRecordIntensity</tabstop>
+  <tabstop>checkDontAutoSwitchTab</tabstop>
+  <tabstop>scrollArea</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>660</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>357</x>
+     <y>660</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
